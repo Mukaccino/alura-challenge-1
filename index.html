@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="encriptador">
+        <div class="formAndButtons">
+
+            <div class="cabecera"> <img class="iconos" src="./assets/icons/Logo.png" alt="Logo alura">
+                <div class="formulario">
+                    <textarea class="ingresoForm" name="formulario" rows="6"
+                        placeholder="Ingresa el texto que desees "></textarea>
+
+                </div>
+            </div>
+
+            <div class="botonera">
+                <p class="infoBox"> <img src="./assets/icons/Group.svg" alt="warning"> Solo letras minusculas y sin
+                    acentos</p>
+                <div class="botones">
+                    <button class=" bton btnEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button class=" bton btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="resultados">
+            <div class="printData">
+                <img class="imgSD" src="./assets/images/panel-image.png" alt="muñeco usuario">
+                <h2 class="noMessage">Ningún mensaje fue encontrado</h2>
+                <p class="messageData">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="copiar">
+                <button class="btnCopiar ocultar" onclick="copiar()"> Copiar </button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #F3F5FC;
+    height: 100vh !important;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.iconos {
+    margin-top: 40px;
+    width: 120px;
+    height: 48px;
+    gap: 40px;
+    position: relative;
+}
+
+.cabecera,
+.encriptador,
+.resultados {
+    display: flex;
+}
+
+.encriptador {
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.formAndButtons {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.resultados {
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 32px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 24px 32px -8px hsla(0, 0%, 0%, 0.08);
+    ;
+}
+
+.formulario {
+    margin-top: 168px;
+}
+
+.ingresoForm {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    width: 680px;
+    height: 288px;
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid #F3F5FC;
+    color: #0A3871;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.ingresoForm::placeholder {
+    color: #0A3871;
+    opacity: 1;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.botones {
+    width: 680px;
+    height: 67px;
+    gap: 24px;
+    margin: 40px;
+}
+
+.bton {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+}
+
+.btnDesencriptar {
+    background-color: #D8DFE8 !important;
+    color: #0A3871 !important;
+    border: 1px solid transparent;
+}
+
+.btnEncriptar {
+    background-color: #0A3871 !important;
+    color: #FFFFFF !important;
+    border: 0;
+}
+
+.noMessage,
+.datos {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #343A40;
+}
+
+.messageData {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+    display: block;
+    overflow: auto;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    max-height: 700px;
+    
+}
+
+.btnCopiar {
+    width: 336px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background-color: #FFFFFF;
+    display: block;
+}
+
+
+.printData{
+    height: 700px;
+}
+
+.printData,
+.imgSD {
+    width: 336px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.imgSD {
+    height: 304px;
+    margin-top: 83px;
+}
+
+.infoBox {
+    margin-left: 40px;
+}
+
+.ocultar {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .encriptador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formulario {
+        margin-top: 100px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        max-width: 688px;
+    }
+
+    .ingresoForm {
+        width: 100%;
+        max-width: 688px;
+        height: 288px;
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 auto;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .botonera {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 688px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .botones {
+        width: 100%;
+        max-width: 688px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bton {
+        width: 100%;
+        max-width: 240px;
+        margin: 10px;
+    }
+
+    .copiar {
+        width: 380px;
+    }
+
+    .messageData {
+        margin-bottom: 15px;
+    }
+
+    .btnCopiar {
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
+
+    .infoBox {
+        width: 100%;
+        max-width: 688px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .iconos {
+        align-self: start;
+    }
+}
+
+
+
+@media (max-width: 376px) {
+    .encriptador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formAndButtons {
+        justify-content: space-around;
+    }
+
+    .formulario {
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .ingresoForm {
+        width: 100%;
+        max-width: 340px;
+        height: 200px;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .botonera {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 0 auto;
+    }
+
+    .botones {
+        width: 100%;
+        max-width: 340px;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bton {
+        width: 100%;
+        max-width: 280px;
+        margin: 8px 0;
+    }
+
+    .copiar {
+        width: 100%;
+        max-width: 340px;
+        margin: 10px auto;
+    }
+
+    .btnCopiar {
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
+
+    .infoBox {
+        width: 100%;
+        max-width: 340px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .iconos {
+        width: 80px;
+        height: 32px;
+        margin: 20px 0;
+    }
+
+    .printData{
+        height: 500px;
+    }
+    .messageData{
+        max-height: 450px;
+
+    }
+
+    .resultados {
+        margin: 60px 40px 40px 40px;
+        width: 300px;
+        height: 600px;
+    }
+}
